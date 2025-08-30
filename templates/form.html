@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Add User</h2>
+    <form action="/submit" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required placeholder="Enter name"><br><br>
+
+        <label>Father Name:</label>
+        <input type="text" name="fathername" required placeholder="Enter Father name"><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required placeholder="Enter email"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter phone number" pattern="[0-9]{10}"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
